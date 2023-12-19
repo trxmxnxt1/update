@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Automatic fish feeding control board</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+    </head>
+    <body>
+	<script src="index.php"></script>
+
+        <div class="bg-img">
+		<h1/center>Automatic fish feeding control board</center/h1>
+
+            <div class="content">
+		
+            <div class="box-left">           
+                <p>feed the fish</p>
+                  <a href="/on"><button type="button" class="btn btn1">ON</button></a>
+                  <a href="/off"><button type="button" class="btn btn2">OFF</button></a>
+	    </div>
+	    <div class="content">
+            <div class="box-right">
+              <p>Switch Power Transfer</p>
+                <a href="/relay1"><button type="button" class="btn btn3">Switching</button></a>
+		<a href="/relayoff"><button type="button" class="btn btn4">All closed</button></a>
+		<a href="/relay2"><button type="button" class="btn btn5">Battery</button></a>		
+	</div>
+	    <div class="content1">
+	    
+	    <div class="firstfeed">
+	      	<p/center>Automatic fish feeding control board</center/p>
+		</section>
+		<section>
+		<p1>ตั้งเวลารอบแรก</p1>
+		<br>
+		<form action="index.php" method="post">
+    <input type="number" name="hour" min="0" max="23" placeholder="ชั่วโมง">
+    <input type="number" name="minute" min="0" max="59" placeholder="นาที">
+    <input type="number" name="second" min="0" max="59" placeholder="วินาที">
+    <input type="submit" value="ยืนยัน">
+  </form>
+</section>
+	    <div class="secondfeed">
+		</section>
+  		<section>	
+		<p2>ตั้งเวลารอบที่ 2</p2>
+		<form action="index.php" method="post">
+    <input type="number" name="hour" min="0" max="23" placeholder="ชั่วโมง">
+    <input type="number" name="minute" min="0" max="59" placeholder="นาที">
+    <input type="number" name="second" min="0" max="59" placeholder="วินาที">
+    <input type="submit" value="ยืนยัน">
+  </form>
+		</section>
+		
+        </div>
+    </body>
+</html>
